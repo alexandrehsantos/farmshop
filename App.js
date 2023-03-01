@@ -1,9 +1,9 @@
+import { Button, SafeAreaView, StatusBar, StyleSheet, Text, View } from 'react-native';
 import {
   Montserrat_400Regular,
   Montserrat_700Bold,
   useFonts
 } from '@expo-google-fonts/montserrat';
-import { SafeAreaView, StatusBar, StyleSheet, Text, View } from 'react-native';
 
 import AppLoading from 'expo-app-loading';
 import Basket from './src/screens/Basket/index';
@@ -14,12 +14,12 @@ import mock from './mocks/basket';
 export default function App() {
   const [loadedFont] = useFonts({
     "MontSerratRegular": Montserrat_400Regular,
-    "MontSerratBold": Montserrat_700Bold
+    "MontSerratBold": Montserrat_700Bold,
   });
 
   if (!loadedFont) { <AppLoading /> }
   return (
-    <SafeAreaView>
+    <SafeAreaView style={{flex: 1}}>
       <StatusBar />
       <Basket {...mock} />
     </SafeAreaView>

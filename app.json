@@ -1,10 +1,10 @@
 {
   "expo": {
-    "name": "orgs",
-    "slug": "orgs-cesta",
+    "name": "Bulvee Market",
+    "slug": "bulvee-market",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/bulvee.png",
     "userInterfaceStyle": "light",
     "splash": {
       "image": "./assets/splash.png",

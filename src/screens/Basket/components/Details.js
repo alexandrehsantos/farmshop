@@ -1,9 +1,10 @@
 import { Image, StyleSheet, View } from "react-native";
 
+import DefaultButton from "./DefaultButton.js"
 import DefaultText from "../../../components/DefaultText";
 import React from "react";
 
-export default function Details({name, farmName, logoFarm, description, price}) {
+export default function Details({ name, farmName, logoFarm, description, price, buttonName }) {
     return (<>
         <DefaultText style={style.name}>{name}</DefaultText>
         <View style={style.farm}>
@@ -14,6 +15,7 @@ export default function Details({name, farmName, logoFarm, description, price}) 
             {description}
         </DefaultText>
         <DefaultText style={style.price}>{price}</DefaultText>
+        <DefaultButton>{buttonName}</DefaultButton>
     </>);
 }
 
